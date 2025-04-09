@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* General Reset */
+/* css/home-page.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5e3c3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.navbar .categories {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .categories a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .right-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar .right-section a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .search-bar input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 300px;
+}
+
+.navbar .search-bar button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.title {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+  text-align: center;
+  margin: 20px 0 30px;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 9px;
+  color: #333;
+}
+
+.image-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-container {
+  position: relative;
+  width: 30%;
+  margin-bottom: 80px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.image-container h2 {
+  position: absolute;
+  bottom: -45px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.product-link {
+  position: absolute;
+  bottom: -95px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: antiquewhite;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.product-link:hover {
+  background-color: #e6d5b8;
+}
+
+.additional-content {
+  margin: 80px auto;
+  padding: 30px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: oldlace;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: auto;
+}

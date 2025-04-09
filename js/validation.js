@@ -61,10 +61,42 @@ document.addEventListener('DOMContentLoaded', function() {
             isValid = false;
         }
 
-        // If any validation failed, prevent form submission
-        if (!isValid) {
-            event.preventDefault();
+        // If form is valid, show success message with form data
+        if (isValid) {
+            showSuccessAlert();
+            // Optional: You can keep the form submission if needed
+            // form.submit();
         }
+
+        // Always prevent default submission to handle it ourselves
+        event.preventDefault();
+    }
+
+    /**
+     * Displays a success alert with all form data
+     */
+    function showSuccessAlert() {
+        const formData = {
+            firstName: firstName.value.trim(),
+            lastName: lastName.value.trim(),
+            email: email.value.trim(),
+            // Note: We don't show passwords in alerts for security
+        };
+
+        const alertMessage = `
+            Account Created Successfully!
+            ==========================
+            First Name: ${formData.firstName}
+            Last Name: ${formData.lastName}
+            Email: ${formData.email}
+            
+            Thank you for registering!
+        `;
+
+        alert(alertMessage);
+        
+        // Reset the form after successful submission
+        form.reset();
     }
 
     /**
